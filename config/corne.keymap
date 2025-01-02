@@ -71,7 +71,6 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp N1           &kp N2           &kp N3        &kp N4             &kp N5                           &kp N6  &kp N7         &kp N8        &kp N9       &kp N0           &kp EQUAL
 &kp TAB        &kp Q            &kp W            &kp E         &kp R              &kp T                            &kp Y   &kp U          &kp I         &kp O        &kp P            &kp BSPC
 &kp BACKSPACE  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                            &kp H   &hmr RSHIFT J  &hmr RCTRL K  &hmr RALT L  &hmr RMETA SEMI  &kp SQT
 &kp LSHFT      &hml LC(Z) Z     &hml LC(X) X     &hml LC(C) C  &hml LC(V) V       &kp B    &kp N   &kp M          &kp COMMA     &kp DOT      &kp FSLH         &kp RSHFT
@@ -84,7 +83,6 @@
         Mac {
             display-name = "Mac";
             bindings = <
-&kp GRAVE      &kp N1        &kp N2           &kp N3           &kp N4             &kp N5                           &kp N6  &kp N7         &kp N8        &kp N9       &kp N0           &kp EQUAL
 &kp TAB        &kp Q         &kp W            &kp E            &kp R              &kp T                            &kp Y   &kp U          &kp I         &kp O        &kp P            &kp BSPC
 &kp BACKSPACE  &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_WIN D  &hml LEFT_SHIFT F  &kp G                            &kp H   &hmr RSHIFT J  &hmr RMETA K  &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
 &kp LSHFT      &hml LG(Z) Z  &hml LG(X) X     &hml LG(C) C     &hml LG(V) V       &kp B      &kp N   &kp M          &kp COMMA     &kp DOT      &kp FSLH         &kp RSHFT
@@ -96,7 +94,6 @@
 
         alt-lower {
             bindings = <
-&none       &none             &none             &none             &none                         &none                         &none             &none                    &none          &none             &none              &none
 &kp ESCAPE  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4                  &kp N5                        &kp NUMBER_6      &kp N7                   &kp N8         &kp N9            &kp N0             &kp EQUAL
 &kp GRAVE   &kp RA(NUMBER_1)  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &hml LEFT_SHIFT RA(NUMBER_4)  &kp RA(N5)                    &kp RA(NUMBER_6)  &hmr RIGHT_SHIFT RA(N7)  &kp RA(N8)     &kp RA(N9)        &kp RA(N0)         &kp RA(EQUAL)
 &none       &none             &none             &none             &none                         &none          &none             &kp MINUS                &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
@@ -118,7 +115,6 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR     &bt BT_SEL 0     &bt BT_SEL 1               &bt BT_SEL 2     &bt BT_SEL 3             &bt BT_SEL 4                    &none      &none     &none     &none          &none     &none
 &kp KP_SLASH   &kp KP_MULTIPLY  &kp KP_NUMBER_7            &kp KP_N8        &kp KP_N9                &kp KP_MINUS                    &kp PG_UP  &kp DEL   &kp UP    &kp BACKSPACE  &kp HOME  &trans
 &kp BACKSPACE  &kp KP_DOT       &hml LEFT_ALT KP_NUMBER_4  &kp KP_NUMBER_5  &hml LSHIFT KP_NUMBER_6  &kp KP_PLUS                     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT      &kp END   &none
 &none          &kp KP_N0        &kp KP_NUMBER_1            &kp KP_N2        &kp KP_NUMBER_3          &kp KP_EQUAL     &none      &none     &none     &none          &none     &none
@@ -139,7 +135,6 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &none       &none             &none       &none         &none         &none
 &ext_power EP_TOG  &kp F1             &kp F2        &kp F3        &kp F4        &kp F5                                  &kp F6      &kp F7            &kp F8      &kp F9        &kp F10       &kp F11
 &bt BT_CLR         &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp F12
 &ext_power EP_ON   &ext_power EP_OFF  &out OUT_BLE  &out OUT_USB  &none         &none           &none       &none             &none       &none         &none         &none
