@@ -77,11 +77,13 @@
         lenter {
             bindings = <&kp ENTER>;
             key-positions = <15 16>;
+            require-prior-idle-ms = <150>;
         };
 
         renter {
             bindings = <&kp ENTER>;
             key-positions = <19 20>;
+            require-prior-idle-ms = <150>;
         };
     };
 
