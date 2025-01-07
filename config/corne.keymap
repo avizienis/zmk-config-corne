@@ -76,12 +76,12 @@
 
         lenter {
             bindings = <&kp ENTER>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
         };
 
         renter {
             bindings = <&kp ENTER>;
-            key-positions = <7 8>;
+            key-positions = <19 20>;
         };
     };
 
