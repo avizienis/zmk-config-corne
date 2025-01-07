@@ -12,9 +12,6 @@ if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
 
 config ZMK_SPLIT
     default y
-	
-config CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES
-	default y
 
 if ZMK_DISPLAY
 
