@@ -85,6 +85,11 @@
             key-positions = <19 20>;
             require-prior-idle-ms = <150>;
         };
+
+        off {
+            bindings = <&soft_off>;
+            key-positions = <0 11 35 24>;
+        };
     };
 
     keymap {
