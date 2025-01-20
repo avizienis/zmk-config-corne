@@ -54,13 +54,24 @@
             hold-trigger-key-positions = <55 56 57 58 59 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54>;
             hold-trigger-on-release;
         };
+
+        smart_caps: smart_caps {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SMART_CAPS";
+            bindings = <&kp>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <50>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         smart-cap {
-            bindings = <&caps_word>;
+            bindings = <&smart_caps CAPSLOCK 0>;
             key-positions = <16 19>;
         };
 
