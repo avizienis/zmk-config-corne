@@ -36,7 +36,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <50>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <50 51 52 53 54 55 56 57 58 59 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 44 45 46 47 48 49 36 37 38 39 40 41>;
             hold-trigger-on-release;
         };
@@ -50,7 +50,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <50>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <55 56 57 58 59 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54>;
             hold-trigger-on-release;
         };
@@ -64,6 +64,16 @@
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
             require-prior-idle-ms = <50>;
+        };
+
+        shifty_space: shifty_space {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFTY_SPACE";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -117,10 +127,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB        &kp Q            &kp W            &kp E         &kp R              &kp T        &kp Y      &kp U          &kp I         &kp O        &kp P            &kp BSPC
-&kp BACKSPACE  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G        &kp H      &hmr RSHIFT J  &hmr RCTRL K  &hmr RALT L  &hmr RMETA SEMI  &kp SQT
-&kp LSHFT      &hml LC(Z) Z     &hml LC(X) X     &hml LC(C) C  &hml LC(V) V       &kp B        &kp N      &kp M          &kp COMMA     &kp DOT      &kp FSLH         &kp RSHFT
-                                                 &mo 2         &mo 3              &kp SPACE    &kp SPACE  &mo 2          &mo 3
+&kp TAB        &kp Q            &kp W            &kp E         &kp R              &kp T                             &kp Y                            &kp U          &kp I         &kp O        &kp P            &kp BSPC
+&kp BACKSPACE  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                             &kp H                            &hmr RSHIFT J  &hmr RCTRL K  &hmr RALT L  &hmr RMETA SEMI  &kp SQT
+&kp LSHFT      &hml LC(Z) Z     &hml LC(X) X     &hml LC(C) C  &hml LC(V) V       &kp B                             &kp N                            &kp M          &kp COMMA     &kp DOT      &kp FSLH         &kp RSHFT
+                                                 &mo 2         &mo 3              &shifty_space LEFT_SHIFT SPACE    &shifty_space RIGHT_SHIFT SPACE  &mo 2          &mo 3
             >;
         };
 
@@ -180,6 +190,15 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp F12
 &none       &none         &out OUT_BLE  &out OUT_USB  &none         &none           &none       &none             &none       &none         &none         &none
                                         &none         &none         &none           &none       &none             &none
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
