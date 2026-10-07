@@ -16,6 +16,9 @@
 
 / {
     // Activate ADJUST layer by pressing raise and lower
+    chosen {
+        zephyr,display = &oled;
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -235,7 +238,6 @@
         segment-remap;
         com-invdir;
         com-sequential;
-        inversion-on;
         prechargep = <0x22>;
     };
 };
