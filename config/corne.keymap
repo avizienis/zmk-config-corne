@@ -100,7 +100,7 @@
             bindings = <&smart_caps CAPSLOCK 0>;
             key-positions = <16 19>;
         };
-
+/*
         toggle-mac {
             bindings = <&tog 1>;
             key-positions = <40 41>;
@@ -110,7 +110,7 @@
             bindings = <&tog 2>;
             key-positions = <36 37>;
         };
-
+*/
         lenter {
             bindings = <&kp ENTER>;
             key-positions = <15 16>;
